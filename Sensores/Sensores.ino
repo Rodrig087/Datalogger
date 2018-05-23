@@ -31,7 +31,7 @@ byte humd_max;
 byte humd_min;
 byte nh3_max;
 byte nh3_min;
-byte Direccion;
+byte Direccion=0;
 
 String s_hora;
 String s_minuto;
@@ -53,7 +53,7 @@ void setup() {
   dht.begin();
 
   clock.begin();
-  //clock.setDateTime(__DATE__, __TIME__);
+  clock.setDateTime(__DATE__, __TIME__);
   pinMode(10,INPUT);
   pinMode(11,INPUT);
   pinMode(12,INPUT);
